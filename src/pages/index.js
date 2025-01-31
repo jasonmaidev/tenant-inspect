@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { CheckCircle, Shield, Clock, Download, Camera, Share2, X } from "lucide-react";
+import Image from 'next/image';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function Home() {
                 Protect Your Security Deposit. Keep Your Landlord Honest.
               </h1>
               <p className="text-xl mb-8 text-white/90">
-                For just $19.99, document your rental's condition legally and avoid unfair charges.
+                For just $19.99, document your rental&apos;s condition legally and avoid unfair charges.
                 Get started in minutes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -38,10 +39,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <img
+              <Image
                 src="/api/placeholder/600/400"
                 alt="Tenant using app"
                 className="rounded-lg shadow-xl"
+                width={600}
+                height={400}
               />
             </div>
           </div>
@@ -112,7 +115,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <Share2 className="w-12 h-12 mb-4 text-[#4CAF50]" />
               <h3 className="font-semibold text-xl mb-2">Share</h3>
-              <p className="text-center">Email the report to your landlord – it's legally valid!</p>
+              <p className="text-center">Email the report to your landlord – it&apos;s legally valid!</p>
             </div>
           </div>
         </div>
@@ -122,7 +125,7 @@ export default function Home() {
       <section className="py-16 bg-[#2A2D5E] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Don't Lose Your Deposit to "Normal Wear and Tear"
+            Don&apos;t Lose Your Deposit to &quot;Normal Wear and Tear&quot;
           </h2>
           <p className="text-xl mb-8">$19.99 today could save you $1,000 tomorrow.</p>
           <button className="bg-[#4CAF50] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#45a049] transition-colors">
@@ -156,7 +159,7 @@ export default function Home() {
             </div>
             <div className="border-b pb-4">
               <h3 className="font-semibold text-xl mb-2">What if my landlord refuses?</h3>
-              <p>Our reports create an undeniable record of your rental's condition. If your landlord refuses to accept it, the documentation can still be used as evidence in disputes.</p>
+              <p>Our reports create an undeniable record of your rental&apos;s condition. If your landlord refuses to accept it, the documentation can still be used as evidence in disputes.</p>
             </div>
           </div>
         </div>
